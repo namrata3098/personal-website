@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { BsAward , BsCodeSlash , BsFileEarmarkFill , BsGithub , BsArrowDownCircle} from 'react-icons/bs';
 import { ImBooks } from 'react-icons/im';
@@ -16,11 +15,11 @@ function App() {
       <div className="App-header">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
       <div className="NavBar">
-        <a>HOME</a>
-        <a>ABOUT</a>
-        <a>RESUME</a>
-        <a>PROJECTS</a>
-        <a>ACHIEVEMENTS</a>
+       <p>HOME</p>
+        <p>ABOUT</p>
+        <p href='#'>RESUME</p>
+        <p href='#'>PROJECTS</p>
+        <p href='#'>ACHIEVEMENTS</p>
       </div>
 
       <div className="About">

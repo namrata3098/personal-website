@@ -11,7 +11,7 @@ function AboutMe() {
             <p style={{ color: '#1976d2' , fontFamily: 'sans-serif' , fontWeight: 'bolder' , fontSize: '41px' , paddingTop: '2%'}}>ABOUT</p>
             <p style={{ color: 'black', fontFamily: 'sans-serif' , fontSize: '50px'}}>Let Me Introduce Myself</p>
             <div className="info">
-            <img src={photo} style={{ borderRadius: '50%' , height: '31vh' , width: '29vh'}}></img>
+            <img src={photo} style={{ borderRadius: '50%' , height: '31vh' , width: '29vh'}} alt='Profile'></img>
                 <div className='write-up'>
                     <p>I am an ambitious engineer seeking a moonshot in Software application development with 2.5 years of industry experience.
                        I'm also Golden Hawk from Wilfrid Laurier University class of 2023 M.S. in Appled Computing. 
