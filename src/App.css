@@ -18,7 +18,9 @@
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;
-  background-image: url("../Wallpaper.jpg");
+  background-image: url("./wall3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Highlight {
@@ -74,9 +76,29 @@
   margin-left: 5%;
 }
 
+.Socialmedia a:hover {
+  background-color: #e5e5e5;;
+}
+
 .App-link {
   color: #61dafb;
 }
+.down-arrow {
+  animation: jumpInfinite 1.5s infinite;
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
 
 @keyframes App-logo-spin {
   from {

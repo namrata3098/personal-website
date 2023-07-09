@@ -10,6 +10,7 @@ import Projects from './Pages/Projects';
 import Activities from './Pages/Activities';
 
 function App() {
+
   return (
     <div className="App">
       <div className="App-header">
@@ -20,16 +21,16 @@ function App() {
         <a>RESUME</a>
         <a>PROJECTS</a>
         <a>ACHIEVEMENTS</a>
-        <a>CONTACT</a>
       </div>
 
       <div className="About">
         <p style={{ fontSize : '60px'}}>Namrata Narayana Prabhu</p>
         <p>Software Engineer </p>
+        <p>Let's Connect! </p>
         <div className="Socialmedia">
-        <a style={{ marginLeft: '0%'}} href=''><BsGithub /></a>
-        <a><BiLogoGmail /></a>
-        <a><FaLinkedinIn /></a>
+        <a style={{ marginLeft: '0%', color:'white'}} href='https://github.com/namrata3098'><BsGithub /></a>
+        <a style={{color:'white'}} href='namnp917@gmail.com'><BiLogoGmail /></a>
+        <a style={{color:'white'}} href='https://www.linkedin.com/in/namrata-n-8b87a31a4/'><FaLinkedinIn /></a>
         </div>
       </div>
 
@@ -62,13 +63,13 @@ function App() {
       </div>
        
       <div style={{ display: 'flex' , justifyContent: 'center' , paddingTop: '7%'}}>
-      <button style={{ border: 'none' , background: 'transparent'}}><BsArrowDownCircle size={60} color='white'></BsArrowDownCircle></button>
+      <BsArrowDownCircle size={60} color='white' className='down-arrow'></BsArrowDownCircle>
       </div>
       </div>
-      <AboutMe/>
-      <Resume/>
-      <Projects/>
-      <Activities/>
+      <AboutMe />
+      <Resume id="Resume"/>
+      <Projects id="Projects"/>
+      <Activities id="Activities"/>
       </div>
   );
 }
