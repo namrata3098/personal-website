@@ -1,0 +1,24 @@
+.Project {
+    background-color: white;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    padding-top: 1%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200vh;
+    height: 38vh;
+}
+
+.display-cards {
+    display: flex;
+    flex-direction: column;
+}

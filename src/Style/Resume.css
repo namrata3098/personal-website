@@ -1,0 +1,17 @@
+.Resume {
+    background-color: black;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding-top: 1%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Heading {
+    font-family: 'sans-serif';
+    font-weight: 'revert-layer' ;
+    color: '#1976d2';
+}

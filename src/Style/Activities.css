@@ -1,0 +1,15 @@
+.Activities {
+    background-color: black;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding-top: 1%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Activities h4 {
+    color: #1976d2;
+}

@@ -16,12 +16,62 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-image: url("../Wallpaper.jpg");
+}
+
+.Highlight {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 22vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.Highlight-divs {
+  margin-top: 1.5%;
+  height: 15vh;
+  width: 20%;
+  border-right: 1px solid white;
+  text-align: center;
+}
+
+.Highlight-divs p {
+  margin-top: -3%;
+}
+.NavBar {
+  border-bottom: 1px solid white;
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.NavBar a {
+  margin-left: 2%;
+  margin-top: 1%;
+  font-size: medium;
+}
+.About {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 7%;
+}
+
+.Socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Socialmedia a {
+  margin-left: 5%;
 }
 
 .App-link {
