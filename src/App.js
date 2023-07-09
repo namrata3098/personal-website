@@ -25,13 +25,13 @@ function App() {
       <div className="About">
         <p style={{ fontSize : '60px'}}>Namrata Narayana Prabhu</p>
         <p>Software Engineer </p>
-        <p>Let's Connect! </p>
         <div className="Socialmedia">
         <a style={{ marginLeft: '0%', color:'white'}} href='https://github.com/namrata3098'><BsGithub /></a>
         <a style={{color:'white'}} href='namnp917@gmail.com'><BiLogoGmail /></a>
         <a style={{color:'white'}} href='https://www.linkedin.com/in/namrata-n-8b87a31a4/'><FaLinkedinIn /></a>
         </div>
       </div>
+      <br></br>
 
       <div className="Highlight">
         <div className="Highlight-divs">
