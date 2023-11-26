@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1976d2;
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -43,13 +43,14 @@
   margin-top: -3%;
 }
 .NavBar {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
   height: 7vh;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(22, 21, 21);
 }
 .NavBar p {
   margin-left: 2%;

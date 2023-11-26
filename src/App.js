@@ -15,11 +15,10 @@ function App() {
       <div className="App-header">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
       <div className="NavBar">
-       <p>HOME</p>
-        <p>ABOUT</p>
-        <p href='#'>RESUME</p>
-        <p href='#'>PROJECTS</p>
-        <p href='#'>ACHIEVEMENTS</p>
+        <p onHo><a href='#AboutMe' style={{ color: 'white'}}>ABOUT</a></p>
+        <p><a href='#Resume' style={{ color: 'white'}}>RESUME</a></p>
+        <p><a href='#Projects' style={{ color: 'white'}}>PROJECTS</a></p>
+        <p><a href='#Activities' style={{ color: 'white'}}>ACHIEVEMENTS</a></p>
       </div>
 
       <div className="About">
@@ -61,14 +60,22 @@ function App() {
         </div>
       </div>
        
-      <div style={{ display: 'flex' , justifyContent: 'center' , paddingTop: '7%'}}>
-      <BsArrowDownCircle size={60} color='white' className='down-arrow'></BsArrowDownCircle>
+      <div style={{ display: 'flex' , justifyContent: 'center' , paddingTop: '5%', height:'200px'}}>
+      <a href='#AboutMe'><BsArrowDownCircle size={60} color='black' className='down-arrow'></BsArrowDownCircle></a>
       </div>
       </div>
+      <div id='AboutMe'>
       <AboutMe />
-      <Resume id="Resume"/>
-      <Projects id="Projects"/>
-      <Activities id="Activities"/>
+      </div>
+      <div id="Resume">
+      <Resume />
+      </div>
+      <div id="Projects">
+      <Projects />
+      </div>
+      <div id="Activities">
+      <Activities />
+      </div>
       </div>
   );
 }

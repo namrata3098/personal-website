@@ -167,7 +167,7 @@ function AboutMe() {
             </div>
             </div>
            </div>
-           <button type="button" class="btn btn-primary"><a href="https://drive.google.com/file/d/1WdHQaGpbMz4ufDlGmml1gIeXjZPXm081/view?usp=sharing"download={'url.txt'} style={{ color: 'white'}}>Download Resume</a></button>
+           <button type="button" class="btn btn-primary"><a href="https://drive.google.com/file/d/1hiw3HANe6OLNOM6oh14xFqrXZlicXMnY/view?usp=sharing"download={'Resume.txt'} style={{ color: 'white'}}>Download Resume</a></button>
            <br></br>
         </div>
     )
