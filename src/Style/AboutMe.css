@@ -1,52 +1,81 @@
 .About-Me {
     background-color: white;
-    min-height: 100vh;
+    height: 100vh;
     font-size: calc(10px + 2vmin);
     color: black;
     padding-top: 1%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
-  .write-up {
-    width: 149vh;
-    height: 30vh;
-    padding-left: 4%;
-    text-align: justify;
-    text-justify: inter-word;
-  }
-
-.info {
+.galery {
+    height: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.Skills {
-    margin-left: 10%;
-    padding-top: 2%;
+.firstName {
+    height: 28%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 31vh;
-    width: 93vh;
-    flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
-.ski {
-    display: flex;
-    flex-direction: row;
+.secondDiv-1 {
+    width: 35%;
+    height: 100%;
+    background-color: antiquewhite;
+    background-image: url('../Pages/airbnb.png');
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
 }
 
-.written-skill{
-    width: '120vh';
+.secondDiv-2 {
+    width: 35%;
+    height: 100%;
+    background-color: antiquewhite;
+    background-image: url('../Pages/crime.jpg');
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.secondDiv-3 {
+    width: 35%;
+    height: 100%;
+    background-color: antiquewhite;
+    background-image: url('../Pages/UIUX.jpg');
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.secondDiv-4 {
+    width: 35%;
+    height: 100%;
+    background-color: antiquewhite;
+    background-image: url('../Pages/crime.jpg');
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.secondDiv-5 {
+    width: 35%;
+    height: 100%;
+    background-color: antiquewhite;
+    background-image: url('../Pages/skills.jpg');
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
 }
 
 
-.textHighlight {
-    color: #1976d2;
-    font-weight: lighter;
+.secondDiv-1:hover,.secondDiv-2:hover,.secondDiv-3:hover,.secondDiv-4:hover,.secondDiv-5:hover {
+    opacity: 0.5;
+    width: 36%;
+    height: 95%;
 }
