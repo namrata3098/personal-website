@@ -1,11 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,116 +6,54 @@
 }
 
 .App-header {
-  background-color: #1976d2;
+  background-color: white;
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: black;
-  background-image: linear-gradient(90deg, rgb(97, 91, 216),rgb(159, 155, 222), rgb(255, 255, 255)),linear-gradient(to bottom, rgb(65, 58, 210),rgb(153, 142, 236), rgb(255, 255, 255));
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   overflow-x: hidden;
-}
-
-.Highlight {
-  background-color: rgba(255, 255, 255, 0.5);
-  height: 22vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.Highlight-divs {
-  margin-top: 1.5%;
-  height: 15vh;
-  width: 20%;
-  border-right: 1px solid white;
   text-align: center;
 }
 
-.Highlight-divs p {
-  margin-top: -3%;
-}
+
 .NavBar {
-  height: 7vh;
+  height: 8vh;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  justify-content: space-between;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 280;
+  padding-top: 1%;
 }
 .NavBar button {
   margin-left: 2%;
   margin-top: 1%;
-  font-size: medium;
+  font-size: large;
   color: white;
-  background-color: whitesmoke;
-  opacity: 0.5;
-  border-radius: 25px;
+  background-color: red;
   border: none;
-  width: 10%;
+  width: 30%;
   height: 5vh;
 }
 
+.NavBar a:hover {
+  text-decoration: none;
+  border-bottom: dotted red;
+}
+
 .NavBar button:hover {
-  font-size: large;
   height: 5.5vh;
 }
 
-.info {
-  height: 60vh;
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.About {
-  height: 60vh;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 30px;
-  margin-top: 7%;
-}
-
-.image {
-  height: 60vh;
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  padding: 2%;
-  margin-top: 7%;
-  margin-left: 3%;
-}
-
-.imageCard {
-  height: 100%;
-  width: 60%;
-  background-color: black;
-  border-radius: 5%;
-}
-
-.Socialmedia {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.Socialmedia a {
-  margin-left: 5%;
-}
-
-.Socialmedia a:hover {
-  background-color: #e5e5e5;;
-}
 
 .App-link {
   color: #61dafb;
 }
 .down-arrow {
-  animation: jumpInfinite 1.5s infinite;
+  animation: App-logo-spin 1.5s infinite;
 }
 
 @keyframes jumpInfinite {
@@ -150,71 +80,44 @@
 
 
 @media (max-width: 600px){
-  .App-header {
-    background-image: linear-gradient(90deg, rgb(97, 91, 216),rgb(159, 155, 222), rgb(255, 255, 255)),linear-gradient(to bottom, rgb(65, 58, 210),rgb(153, 142, 236), rgb(255, 255, 255));
-    height: 100vh;
-  }
 
-  .imageCard {
-    height: 80%;
-    width: 100%;;
+  .NavBar {
+    font-size: 4px;
+    height: fit-content;
   }
+ 
 
   .NavBar button {
-    width: 25%;
-    height: 5vh;
+    width: 35%;
+    height: fit-content;
+    font-size: 4px;
   }
 
-  .App-header {
-    overflow-x: hidden;
+  .NavBar button:hover {
+    height: fit-content;
   }
 
-  .name {
-    font-size: 60px;
-  }
-  .title{
-    font-size: 40px;
-  }
 
 }
-
-@media (max-width: 768px){
-  .App-header {
-    background-image: linear-gradient(90deg, rgb(97, 91, 216),rgb(159, 155, 222), rgb(255, 255, 255)),linear-gradient(to bottom, rgb(65, 58, 210),rgb(153, 142, 236), rgb(255, 255, 255))
-  }
-
-  .NavBar button {
-    width: 25%;
-    height: 5vh;
-  }
-
-  .name {
-    font-size: 60px;
-  }
-  .title{
-    font-size: 40px;
-  }
-
-}
-
 
 @media (max-width: 992px){
-  .App-header {
-    /* background-color: #94b8dc; */
-    background-image: linear-gradient(90deg, rgb(97, 91, 216),rgb(255, 255, 255), rgb(255, 255, 255)),linear-gradient(to bottom, rgb(65, 58, 210),rgb(255, 255, 255), rgb(255, 255, 255))
-  
+
+
+  .NavBar {
+    font-size: 12px;
+    height: fit-content;
   }
+ 
+
 
   .NavBar button {
-    width: 25%;
-    height: 5vh;
+    width: 35%;
+    height: fit-content;
+    font-size: 11px;
   }
 
-  .name {
-    font-size: 40px;
-  }
-  .title{
-    font-size: 30px;
+  .NavBar button:hover {
+    height: fit-content;
   }
 
 }
