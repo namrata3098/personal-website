@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Box } from '@mui/material';
-import '../Style/AboutMe.css'
+import '../Style/Projects.css'
 import photo from './photo.png';
 
 import CircularProgress from '@mui/material/CircularProgress';

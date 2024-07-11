@@ -1,0 +1,298 @@
+.Home {
+    background-color: white;
+    min-height: 100vh;
+    color: black;
+    padding-top: 1%;
+}
+
+.Homecontent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    height: 95vh;
+}
+
+.rightSide{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.leftSide{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.Buttonclass {
+   width: 100%;
+   height: 30%;
+   display: flex;
+   justify-content: center;
+   
+}
+
+.Buttonclass button{
+  width: 25%;
+  font-size: medium;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5%;
+  height: 100%;
+}
+
+
+.naming {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.naming p {
+  font-weight: 200;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+
+.many {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg)
+  }
+
+  .many-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg)
+  }
+  
+  .hex-row {
+    display: flex;
+    justify-content: center;
+    margin: -14.5px 0; /* Adjust this to control the vertical spacing between rows */
+  }
+  
+  .row-1 {
+    padding-left: 200px; /* Adjust for centering */
+  }
+  
+  .row-2 {
+    padding-left: 150px; /* Adjust for centering */
+  }
+  
+  .row-3 {
+    padding-left: 100px; /* Adjust for centering */
+  }
+  
+  .row-4 {
+    padding-left: 50px; /* Adjust for centering */
+  }
+  
+  .row-5 {
+    padding-left: 0px; /* Adjust for centering */
+  }
+  
+  .hexagon {
+    width: 100px;
+    height: 55px;
+    background-color: #007bff;
+    position: relative;
+    margin: 27.5px 0; /* Half the height of a hexagon */
+    left: 1%;
+    margin-left: 2%;
+  }
+  
+  .row-1 {
+    animation: dimBright 1s infinite;
+  }
+  .row-2 {
+    animation: dimBright 2s infinite;
+  }
+  
+  .row-3 {
+    animation: dimBright 3s infinite;
+  }
+  
+  .row-4 {
+    animation: dimBright 4s infinite;
+  }
+  
+  .row-5 {
+    animation: dimBright 5s infinite;
+  }
+  
+  
+  .hexagon::before,
+  .hexagon::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 46px solid transparent;
+    border-right: 46px solid transparent;
+  }
+  
+  .hexagon::before {
+    bottom: 100%;
+    border-bottom: 33px solid #007bff;
+    left: 1%;
+  }
+  
+  .hexagon::after {
+    top: 100%;
+    width: 0;
+    border-top: 33px solid #007bff;
+    left: 1%;
+  }
+  
+  @keyframes dimBright {
+    0%, 100% {
+     opacity: 1
+    }
+    50% {
+     opacity: 0.1
+    }
+  }
+
+  .phoneonly{
+    display: none;
+  }
+
+  
+  .overlay-image {
+    width: 70%;
+    height: 100%;
+  }
+
+
+  @media (max-width: 992px) {
+
+    .hexagon::before,
+  .hexagon::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 36px solid transparent;
+    border-right: 36px solid transparent;
+  }
+
+    .hexagon {
+        width: 73px;
+        height: 47px;
+        background-color: #007bff;
+        position: relative;
+        margin: 27.5px 0; /* Half the height of a hexagon */
+        left: 1%;
+      }
+
+    .hexagon::before {
+        bottom: 100%;
+        border-bottom: 14px solid #007bff;
+        left: 1%;
+      }
+      
+      .hexagon::after {
+        top: 100%;
+        width: 0;
+        border-top: 14px solid #007bff;
+        left: 1%;
+      }
+
+
+
+    .many{
+        display: none;
+    }
+
+    .phoneonly{
+        padding-top: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 100%;
+    }
+
+    .phoneonly-1,.phoneonly-2, .phoneonly-3 {
+        height: 32%;
+        width: 100%;
+    }
+
+    .mobile-hex {
+        position: absolute;
+        animation: moveHex 3s infinite alternate;
+      }
+    
+      .mobile-hex:nth-child(1) {
+        animation-delay: 0s;
+        animation-name: moveHex1;
+      }
+    
+      .mobile-hex:nth-child(2) {
+        animation-delay: 1s;
+        animation-name: moveHex2;
+      }
+    
+      .mobile-hex:nth-child(3) {
+        animation-delay: 2s;
+        animation-name: moveHex3;
+      }
+    
+      @keyframes moveHex {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(200px); } /* Adjust to control movement distance */
+      }
+
+
+      @keyframes moveHex1 {
+        0% { transform: translate(0, 0); }
+        25% { transform: translate(100px, 100px); }
+        50% { transform: translate(-100px, 100px); }
+        75% { transform: translate(-100px, -100px); }
+        100% { transform: translate(100px, -100px); }
+      }
+    
+      @keyframes moveHex2 {
+        0% { transform: translate(0, 0); }
+        25% { transform: translate(-100px, 100px); }
+        50% { transform: translate(-100px, -100px); }
+        75% { transform: translate(100px, -100px); }
+        100% { transform: translate(100px, 100px); }
+      }
+    
+      @keyframes moveHex3 {
+        0% { transform: translate(0, 0); }
+        25% { transform: translate(100px, -100px); }
+        50% { transform: translate(100px, 100px); }
+        75% { transform: translate(-100px, 100px); }
+        100% { transform: translate(-100px, -100px); }
+      }
+
+      .naming {
+        height: 70%;
+        margin-left: -21%;
+      }
+
+      .Buttonclass{
+        display: none;
+      }
+}
