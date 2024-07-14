@@ -10,16 +10,16 @@ function Resume() {
             <CustomizedTimeline/> 
             <div className='clients'>
                 <div className='box'>
-                    <div className='images-1'>
+                    <div className='images-1 client'>
                     </div>
                     <div className='details'>
                         <p>Atlassian</p>
-                        <p>Bitbucket - Frontend developer</p>
+                        <p>Frontend developer</p>
                     </div>
                 </div>
 
                 <div className='box'>
-                    <div className='images-1'>
+                    <div className='images-2 client'>
                     </div>
                     <div className='details'>
                         <p>Symphony</p>
@@ -28,7 +28,7 @@ function Resume() {
                 </div>
 
                 <div className='box'>
-                    <div className='images-1'>
+                    <div className='images-3 client'>
                     </div>
                     <div className='details'>
                         <p>Driscoll's</p>
@@ -37,21 +37,21 @@ function Resume() {
                 </div>
 
                 <div className='box'>
-                    <div className='images-1'>
+                    <div className='images-4 client'>
                     </div>
                     <div className='details'>
-                        <p>Driscoll's</p>
+                        <p>Power me</p>
                         <p>Frontend developer</p>
                     </div>
                 </div>
 
              
                 <div className='box'>
-                    <div className='images-1'>
+                    <div className='images-5 client'>
                     </div>
                     <div className='details'>
-                        <p>Driscoll's</p>
-                        <p>Frontend developer</p>
+                        <p>Enquero- internal product</p>
+                        <p>Backend developer</p>
                     </div>
                 </div>
 

@@ -39,6 +39,7 @@ function Home() {
                     <div class="hex-row row-4"></div>
                     <div class="hex-row row-5"></div>
                 </div>
+           
 
                 <div className='phoneonly'>
                 <div className='phoneonly-1'>

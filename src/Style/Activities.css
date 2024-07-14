@@ -1,6 +1,6 @@
 .Activities {
     background-color: white;
-    min-height: 100vh;
+    min-height: 40vh;
     font-size: calc(10px + 2vmin);
     color: black;
     padding-top: 1%;
@@ -10,6 +10,103 @@
     flex-direction: column;
 }
 
+.Acheivements {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    font-size: small;
+}
+
 .Activities h4 {
     color: #1976d2;
+}
+
+.normal {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+    animation: slide-up 2s forwards;
+}
+
+.visible2 {
+    opacity: 1;
+    animation: slide-up2 2s forwards;
+}
+
+.awardbox {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    border-width: 0px 0px 0px 1px;
+    border-style: solid;
+    border-color: #b7dbff;
+}
+
+.awardbox p {
+    font-size: medium;
+}
+
+@media (max-width: 375px) {
+    .awardbox p {
+        font-size: small;
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: #b7dbff;
+    }
+
+    .awardbox {
+        height: 20%;
+        width: 100%;
+    }
+
+    .Acheivements{
+        flex-direction: column;
+        height: 80%;
+    }
+
+
+
+
+    
+}
+
+
+
+@keyframes slide-up {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }   
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up2 {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }   
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

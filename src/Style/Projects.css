@@ -1,6 +1,6 @@
 .About-Me {
     background-color: white;
-    height: 100vh;
+    height: 120vh;
     font-size: calc(10px + 2vmin);
     color: black;
     padding-top: 1%;
@@ -16,66 +16,101 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 
 .firstName {
-    height: 28%;
+    height: 40%;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
 }
 
 .secondDiv-1 {
-    width: 35%;
+    width: 50%;
     height: 100%;
     background-color: antiquewhite;
     background-image: url('../Pages/airbnb.png');
     background-position: center center;
     background-size: cover;
-    border-radius: 10px;
 }
 
 .secondDiv-2 {
-    width: 35%;
+    width: 50%;
     height: 100%;
     background-color: antiquewhite;
     background-image: url('../Pages/crime.jpg');
     background-position: center center;
     background-size: cover;
-    border-radius: 10px;
 }
 .secondDiv-3 {
-    width: 35%;
+    width: 50%;
     height: 100%;
     background-color: antiquewhite;
     background-image: url('../Pages/UIUX.jpg');
     background-position: center center;
     background-size: cover;
-    border-radius: 10px;
 }
 .secondDiv-4 {
-    width: 35%;
+    width: 50%;
     height: 100%;
     background-color: antiquewhite;
     background-image: url('../Pages/crime.jpg');
     background-position: center center;
     background-size: cover;
-    border-radius: 10px;
 }
 .secondDiv-5 {
-    width: 35%;
+    width: 50%;
     height: 100%;
     background-color: antiquewhite;
     background-image: url('../Pages/skills.jpg');
     background-position: center center;
     background-size: cover;
-    border-radius: 10px;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+    align-content: center;
+    color: white;
+    padding: 0.4%;
+    animation: slide-in 1s forwards;
+}
+
+.header{
+    font-size: 18px;
+}
+
+.line {
+    font-size: 16px;
 }
 
 
-.secondDiv-1:hover,.secondDiv-2:hover,.secondDiv-3:hover,.secondDiv-4:hover,.secondDiv-5:hover {
-    opacity: 0.5;
-    width: 36%;
-    height: 95%;
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media ( max-width: 375px) {
+    .firstName {
+        height: 30%;
+    }
+
+
+    .header{
+        font-size: 14px;
+    }
+    
+    .line {
+        font-size: 12px;
+    }
+
+
 }

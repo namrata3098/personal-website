@@ -9,10 +9,11 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import { Widgets } from '@mui/icons-material';
+import '../Style/Timeline.css'
 
 export default function CustomizedTimeline() {
   return (
-    <div style={{ width: '100%', height: '41%' }}>
+    <div className='Timelinecontent'>
           <Timeline position="Right">
       <TimelineItem>
         <TimelineOppositeContent

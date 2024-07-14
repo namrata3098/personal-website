@@ -33,7 +33,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 80%;
+    height: 64%;
     width: 20%;
 }
 
@@ -48,33 +48,42 @@
 
 .images-2 {
     height: 40%;
-    width: 14%;
+    width: 90%;
     background-color: aquamarine;
-    background-image: url('../download.png');
+    background-image: url('../symphony.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+.images-3 {
+    height: 40%;
+    width: 90%;
+    background-image: url('../driscolls.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
-.images-3 {
-    height: 100%;
-    width: 23%;
-    background-color: rgb(10, 193, 132);
-}
-
 .images-4 {
-    height: 100%;
-    width: 23%;
-    background-color: aquamarine;
+    height: 40%;
+    width: 90%;
+    background-image: url('../powerme.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .images-5 {
-    height: 100%;
-    width: 23%;
-    background-color: aquamarine;
+    height: 40%;
+    width: 90%;
+    background-image: url('../enquero.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
-@media ( max-width: 420px ) {
+@media ( max-width: 425px ) {
     .clients{
         flex-direction: column;
         height: 51%;
@@ -86,7 +95,7 @@
         align-items: center;
         width: 100%;
         border-radius: 5%;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .Resumecontent {
@@ -96,5 +105,13 @@
         min-height: 200vh;
     }
 
+    .details{
+        height: 40%;
+
+    }
+
+    .client{
+        height: 60%;
+    }
 
 }
