@@ -3,7 +3,7 @@ import '../Style/About.css'
 import ProgressBar from '../Components/Progressbar';
 function About() {
 
-    const skills = [{ skill: 'React/Angular', percentage: 70 }, { skill: 'JavaScript', percentage: 85 },{ skill: 'Java/Node', percentage: 60 }, { skill: 'Python', percentage: 60 }, { skill: 'Cloud (AWS/GCP)', percentage: 60 }] ;
+    const skills = [{ skill: 'Frontend', percentage: 85 }, { skill: 'Backend', percentage: 80 },{ skill: 'Data structures', percentage: 75 }, { skill: 'Cloud (AWS/GCP)', percentage: 70 }] ;
     const words = ['Hello','Hi','Bonjour','Nin hao','Hola', 'Ciao'];
     const [currentWord, setCurrentWord] = useState(words[0]);
     const [index, setIndex] = useState(0);
@@ -35,21 +35,16 @@ function About() {
                             I like building applications as I enjoy what I can see and play around with. Apart from my frontend and backend skills, I have experience on cloud and CICD pipelines.
                             I love playing sports and enjoy a cup of coffee while I travel.
                         </p>
-                    </div>
-                </div>
 
-                <div className='skills'>
-                    <div className='progressbar'>
-                        {
-                            skills.map((it) => {
-                                return (<div>
-                                    <ProgressBar skill={it.skill} percentage={it.percentage}/>
-                                </div>)
-                                
-                            })
-                        }
+                        <div className='textarea'>  
+                            <p className='details'>  As much I love to code, I love doing many other things!</p>
+                            <p className='details jr'> 🌏 Learning French, my 5th language!</p>
+                            <p className='details jr'> 💻 Working on an open source AI-driven project to advise youngster's their career goals!</p>
+                            <p className='details jr'> ✈️ Travelling across canada - all provinces, 4 done!</p>
+                            <p className='details jr'> 🏅 Reworking on my fitness and Hope to get back to Handball, I played for my undergrad university team and won gold!</p>
+                        </div>  
+
                     </div>
-                    
                 </div>
             </div>
 

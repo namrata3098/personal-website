@@ -1,17 +1,100 @@
 .Resume {
     background-color: black;
-    min-height: 100vh;
+    min-height: 110vh;
     font-size: calc(10px + 2vmin);
     color: white;
     padding-top: 1%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
     flex-direction: column;
+}
+
+.Resumecontent {
+    width: 100%;
+    height: 110vh;
 }
 
 .Heading {
     font-family: 'sans-serif';
     font-weight: 'revert-layer' ;
     color: '#1976d2';
+}
+
+.clients {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 80%;
+    width: 20%;
+}
+
+.images-1 {
+    height: 40%;
+    width: 90%;
+    background-image: url('../download.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.images-2 {
+    height: 40%;
+    width: 14%;
+    background-color: aquamarine;
+    background-image: url('../download.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.images-3 {
+    height: 100%;
+    width: 23%;
+    background-color: rgb(10, 193, 132);
+}
+
+.images-4 {
+    height: 100%;
+    width: 23%;
+    background-color: aquamarine;
+}
+
+.images-5 {
+    height: 100%;
+    width: 23%;
+    background-color: aquamarine;
+}
+
+@media ( max-width: 420px ) {
+    .clients{
+        flex-direction: column;
+        height: 51%;
+        align-items: center;
+    }
+
+    .box{
+        margin-top: 1%;
+        align-items: center;
+        width: 100%;
+        border-radius: 5%;
+        flex-direction: row;
+    }
+
+    .Resumecontent {
+        height: 200vh;
+    }
+    .Resume{
+        min-height: 200vh;
+    }
+
+
 }

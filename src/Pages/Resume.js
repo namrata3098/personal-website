@@ -5,12 +5,59 @@ import CustomizedTimelineEducation from './Timeline copy';
 function Resume() {
    return (
     <div className="Resume">
-        <p>RESUME</p>
-        <p className='Heading'>EDUCATION</p>
-        <CustomizedTimelineEducation />
+        <div className='Resumecontent'>
+            <p>Experience</p>
+            <CustomizedTimeline/> 
+            <div className='clients'>
+                <div className='box'>
+                    <div className='images-1'>
+                    </div>
+                    <div className='details'>
+                        <p>Atlassian</p>
+                        <p>Bitbucket - Frontend developer</p>
+                    </div>
+                </div>
 
-        <p className='Heading'>WORK EXPERIENCE</p>
-        <CustomizedTimeline/>
+                <div className='box'>
+                    <div className='images-1'>
+                    </div>
+                    <div className='details'>
+                        <p>Symphony</p>
+                        <p>Data feed - Backend developer/SRE</p>
+                    </div>
+                </div>
+
+                <div className='box'>
+                    <div className='images-1'>
+                    </div>
+                    <div className='details'>
+                        <p>Driscoll's</p>
+                        <p>Frontend developer</p>
+                    </div>
+                </div>
+
+                <div className='box'>
+                    <div className='images-1'>
+                    </div>
+                    <div className='details'>
+                        <p>Driscoll's</p>
+                        <p>Frontend developer</p>
+                    </div>
+                </div>
+
+             
+                <div className='box'>
+                    <div className='images-1'>
+                    </div>
+                    <div className='details'>
+                        <p>Driscoll's</p>
+                        <p>Frontend developer</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
         
     </div>
    )

@@ -50,13 +50,16 @@ function App() {
           
         
 
-          <div id='Projects'>
-          <Projects />
-          </div>
 
           <div id="Resume">
           <Resume />
           </div>
+
+          
+          <div id='Projects'>
+          <Projects />
+          </div>
+          
 
           <div id="Acheivements">
           <Activities />
