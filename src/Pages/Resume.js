@@ -1,6 +1,6 @@
 import '../Style/Resume.css'
 import CustomizedTimeline from './Timeline';
-import CustomizedTimelineEducation from './Timeline copy';
+
 
 function Resume() {
    return (
@@ -54,6 +54,8 @@ function Resume() {
                         <p>Backend developer</p>
                     </div>
                 </div>
+
+                
 
 
             </div>

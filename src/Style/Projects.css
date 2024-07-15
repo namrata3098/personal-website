@@ -28,7 +28,7 @@
     width: 50%;
     height: 100%;
     background-color: antiquewhite;
-    background-image: url('../Pages/airbnb.png');
+    background-image: url('../airbnb.png');
     background-position: center center;
     background-size: cover;
 }
@@ -37,7 +37,7 @@
     width: 50%;
     height: 100%;
     background-color: antiquewhite;
-    background-image: url('../Pages/crime.jpg');
+    background-image: url('../crime.jpg');
     background-position: center center;
     background-size: cover;
 }
@@ -53,7 +53,7 @@
     width: 50%;
     height: 100%;
     background-color: antiquewhite;
-    background-image: url('../Pages/crime.jpg');
+    background-image: url('../android.jpg');
     background-position: center center;
     background-size: cover;
 }
@@ -61,7 +61,16 @@
     width: 50%;
     height: 100%;
     background-color: antiquewhite;
-    background-image: url('../Pages/skills.jpg');
+    background-image: url('../netflix\ clone.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.secondDiv-6 {
+    width: 50%;
+    height: 100%;
+    background-color: antiquewhite;
+    background-image: url('../resume\ parser.jpg');
     background-position: center center;
     background-size: cover;
 }

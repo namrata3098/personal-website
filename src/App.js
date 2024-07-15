@@ -1,16 +1,21 @@
 import './App.css';
-import { BsAward , BsCodeSlash , BsFileEarmarkFill , BsGithub , BsArrowDownCircle} from 'react-icons/bs';
-import { ImBooks } from 'react-icons/im';
-import { FaTrophy , FaLinkedinIn } from 'react-icons/fa';
-import { BiLogoGmail } from 'react-icons/bi';
 import Projects from './Pages/Project';
 import Resume from './Pages/Resume';
 import Activities from './Pages/Activities';
 import Home from './Pages/Home';
 import About from './Pages/About';
-import { blue } from '@mui/material/colors';
 
 function App() {
+
+  const downloadPDF = () => {
+    const pdfUrl = 'https://drive.google.com/file/d/1L_Y8DW2l5IaEOubYQKoheiPXgG4jjFBn/view?usp=sharing';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <>
@@ -24,14 +29,14 @@ function App() {
           {/* //NavBar */}
           <div className="NavBar">    
           <div className="NavbarLinks">
-          <a href='#AboutMe' style={{ color: 'black'}}>HOME</a>
-          <a href='#AboutMe' style={{ color: 'black'}}>ABOUT ME</a>
-          <a href='#AboutMe' style={{ color: 'black'}}>PROJECTS</a>
+          <a href='#Home' style={{ color: 'black'}}>HOME</a>
+          <a href='#About' style={{ color: 'black'}}>ABOUT ME</a>
           <a href='#Resume' style={{ color: 'black'}}>RESUME</a>
-          <a href='#Activities' style={{ color: 'black'}}>ACHEIVEMENTS</a>
+          <a href='#Projects' style={{ color: 'black'}}>PROJECTS</a>
+          <a href='#Acheivements' style={{ color: 'black'}}>ACHEIVEMENTS</a>
           </div>
           <div className="ResumeLinks">
-            <button style={{ width: '90%'}}> RESUME </button>
+            <button style={{ width: '90%'}} onClick={downloadPDF}> RESUME </button>
           </div>
           </div>
           

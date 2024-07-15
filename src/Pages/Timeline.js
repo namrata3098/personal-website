@@ -8,7 +8,6 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
-import { Widgets } from '@mui/icons-material';
 import '../Style/Timeline.css'
 
 export default function CustomizedTimeline() {

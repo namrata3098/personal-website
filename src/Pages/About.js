@@ -1,10 +1,8 @@
-import { useEffect , useState} from 'react';
+import { useEffect , useState, useMemo} from 'react';
 import '../Style/About.css'
-import ProgressBar from '../Components/Progressbar';
 function About() {
 
-    const skills = [{ skill: 'Frontend', percentage: 85 }, { skill: 'Backend', percentage: 80 },{ skill: 'Data structures', percentage: 75 }, { skill: 'Cloud (AWS/GCP)', percentage: 70 }] ;
-    const words = ['Hello','Hi','Bonjour','Nin hao','Hola', 'Ciao'];
+    const words = useMemo(() => ['Hello','Hi','Bonjour','Nin hao','Hola', 'Ciao'],[]);
     const [currentWord, setCurrentWord] = useState(words[0]);
     const [index, setIndex] = useState(0);
 
@@ -14,7 +12,7 @@ function About() {
         }, 1000); // Change word every 2 seconds
 
         return () => clearInterval(interval);
-    }, []);
+    }, [words.length]);
 
     useEffect(() => {
         setCurrentWord(words[index]);

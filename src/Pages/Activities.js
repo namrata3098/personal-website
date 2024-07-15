@@ -1,4 +1,4 @@
-import { FaAward, FaBasketballBall, FaBook, FaCertificate, FaCookie, FaCookieBite } from 'react-icons/fa';
+import { FaAward, FaBasketballBall, FaCertificate, FaCookieBite } from 'react-icons/fa';
 import '../Style/Activities.css'
 import { useEffect , useState, useRef} from 'react';
 function Activities() {

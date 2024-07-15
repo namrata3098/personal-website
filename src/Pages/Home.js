@@ -2,7 +2,7 @@ import {BsArrowDownCircle} from 'react-icons/bs';
 import { useEffect } from 'react';
 import '../Style/Home.css';
 import { BsGithub} from 'react-icons/bs';
-import { FaTrophy , FaLinkedinIn } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
 import { BiLogoGmail } from 'react-icons/bi';
 
 function Home() {
@@ -57,9 +57,6 @@ function Home() {
                 </div>
                 </div>
 
-                <div className='Buttonclass'>
-                    <button>Switch Animation</button>
-                </div>
                 </div>
                 <div className='leftSide'>
                     <div className='naming'>
@@ -72,7 +69,7 @@ function Home() {
                         </div>
 
                         <div style={{ display: 'flex' , justifyContent: 'center', paddingTop: '6%'}}>
-                            <a href='#'><BsArrowDownCircle size={60} color='black' className='down-arrow'></BsArrowDownCircle></a>
+                            <BsArrowDownCircle size={60} color='black' className='down-arrow'></BsArrowDownCircle>
                         </div>
                     </div>
                     
